@@ -1,0 +1,3 @@
+Time resolution is 1 ps
+Note: Simulation finished
+Time: 10 us  Iteration: 0  Process: /tb_clock_divier_by_100/monitor_process  File: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.srcs/sim_1/new/clock_divider_by_100_tb.vhd

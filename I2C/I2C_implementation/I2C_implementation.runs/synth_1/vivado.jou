@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1.1 (64-bit)
+# SW Build 3286242 on Wed Jul 28 13:10:47 MDT 2021
+# IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
+# Start of session at: Mon Oct  7 23:13:01 2024
+# Process ID: 12756
+# Current directory: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1
+# Command line: vivado.exe -log i2c_fsm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c_fsm.tcl
+# Log file: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1/i2c_fsm.vds
+# Journal file: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source i2c_fsm.tcl -notrace

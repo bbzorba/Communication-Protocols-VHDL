@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.srcs/sources_1/new/clock_quarter_divider.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_quarter_divider'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.srcs/sources_1/new/clock_divider_by_100.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'clock_divier_by_100'
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.srcs/sim_1/new/clock_divider_by_100_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'tb_clock_divier_by_100'

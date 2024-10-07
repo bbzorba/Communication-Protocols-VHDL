@@ -1,0 +1,19 @@
+Vivado Simulator v2021.1.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/Softwares/Vivado_setup_and_workspace/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto bbaf314d677f4e2d8909c537d39f83e4 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_clock_divier_by_100_behav xil_defaultlib.tb_clock_divier_by_100 -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.clock_divider_by_25 [clock_divider_by_25_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_quarter_divider [clock_quarter_divider_default]
+Compiling architecture behavioral of entity xil_defaultlib.clock_divier_by_100 [clock_divier_by_100_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_clock_divier_by_100
+Built simulation snapshot tb_clock_divier_by_100_behav

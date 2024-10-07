@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_clock_divier_by_100_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_clock_divier_by_100" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="9,999,999,995 ps"></ZoomStartTime>
+      <ZoomEndTime time="10,000,000,002 ps"></ZoomEndTime>
+      <Cursor1Time time="9,999,999,996 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="276"></NameColumnWidth>
+      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="5" />
+   <wvobject fp_name="/tb_clock_divier_by_100/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divier_by_100/UUT/U1/CLK_divided_to_25" type="logic">
+      <obj_property name="ElementShortName">CLK_divided_to_25</obj_property>
+      <obj_property name="ObjectShortName">CLK_divided_to_25</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divier_by_100/SCLK" type="logic">
+      <obj_property name="ElementShortName">SCLK</obj_property>
+      <obj_property name="ObjectShortName">SCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divier_by_100/DCLK" type="logic">
+      <obj_property name="ElementShortName">DCLK</obj_property>
+      <obj_property name="ObjectShortName">DCLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_clock_divier_by_100/CLK_PERIOD" type="other">
+      <obj_property name="ElementShortName">CLK_PERIOD</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD</obj_property>
+   </wvobject>
+</wave_config>
