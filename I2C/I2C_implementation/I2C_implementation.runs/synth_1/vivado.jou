@@ -1,12 +1,24 @@
 #-----------------------------------------------------------
-# Vivado v2021.1.1 (64-bit)
-# SW Build 3286242 on Wed Jul 28 13:10:47 MDT 2021
-# IP Build 3279568 on Wed Jul 28 16:48:48 MDT 2021
-# Start of session at: Mon Oct  7 23:13:01 2024
-# Process ID: 12756
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Oct  8 18:17:13 2024
+# Process ID: 2216
 # Current directory: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1
-# Command line: vivado.exe -log i2c_fsm.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c_fsm.tcl
-# Log file: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1/i2c_fsm.vds
+# Command line: vivado.exe -log i2c_write.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c_write.tcl
+# Log file: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1/i2c_write.vds
 # Journal file: E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1\vivado.jou
+# Running On        :Baris
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :Intel(R) Core(TM) i7-9700K CPU @ 3.60GHz
+# CPU Frequency     :3600 MHz
+# CPU Physical cores:8
+# CPU Logical cores :8
+# Host memory       :17119 MB
+# Swap memory       :4520 MB
+# Total Virtual     :21639 MB
+# Available Virtual :2958 MB
 #-----------------------------------------------------------
-source i2c_fsm.tcl -notrace
+source i2c_write.tcl -notrace

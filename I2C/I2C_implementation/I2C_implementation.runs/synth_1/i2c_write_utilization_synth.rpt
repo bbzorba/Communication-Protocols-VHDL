@@ -1,13 +1,14 @@
-Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
----------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2021.1.1 (win64) Build 3286242 Wed Jul 28 13:10:47 MDT 2021
-| Date         : Mon Oct  7 23:13:17 2024
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Oct  8 18:17:49 2024
 | Host         : Baris running 64-bit major release  (build 9200)
-| Command      : report_utilization -file i2c_fsm_utilization_synth.rpt -pb i2c_fsm_utilization_synth.pb
-| Design       : i2c_fsm
-| Device       : 7a35tcpg236-1
+| Command      : report_utilization -file i2c_write_utilization_synth.rpt -pb i2c_write_utilization_synth.pb
+| Design       : i2c_write
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
 | Design State : Synthesized
----------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------
 
 Utilization Design Information
 
@@ -40,6 +41,8 @@ Table of Contents
 | F8 Muxes                |    0 |     0 |          0 |      8150 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
+Warning! LUT value is adjusted to account for LUT combining.
+Warning! For any ECO changes, please run place_design if there are unplaced instances
 
 
 1.1 Summary of Registers by Type

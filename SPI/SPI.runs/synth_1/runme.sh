@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1'
+HD_PWD='E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,4 +41,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log i2c_write.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c_write.tcl
+EAStep vivado -log SPI_master_read_TSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_master_read_TSM.tcl

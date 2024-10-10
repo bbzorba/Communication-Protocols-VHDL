@@ -1,0 +1,40 @@
+
+*** Running vivado
+    with args -log SPI_master_read_TSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_master_read_TSM.tcl
+
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Thu Oct 10 12:06:53 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source SPI_master_read_TSM.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 515.512 ; gain = 201.090
+Command: synth_design -top SPI_master_read_TSM -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20260
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 971.992 ; gain = 453.516
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'SPI_master_read_TSM' [E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.srcs/sources_1/new/SPI_master_TX_RX_TSM.vhd:15]
+ERROR: [Synth 8-11323] assigned value '24' out of range [E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.srcs/sources_1/new/SPI_master_TX_RX_TSM.vhd:66]
+WARNING: [Synth 8-614] signal 'CLK' is read in the process but is not in the sensitivity list [E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.srcs/sources_1/new/SPI_master_TX_RX_TSM.vhd:43]
+WARNING: [Synth 8-614] signal 'data' is read in the process but is not in the sensitivity list [E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.srcs/sources_1/new/SPI_master_TX_RX_TSM.vhd:43]
+ERROR: [Synth 8-285] failed synthesizing module 'SPI_master_read_TSM' [E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.srcs/sources_1/new/SPI_master_TX_RX_TSM.vhd:15]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1081.555 ; gain = 563.078
+---------------------------------------------------------------------------------
+synthesize failed
+INFO: [Common 17-83] Releasing license: Synthesis
+6 Infos, 2 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Vivado Synthesis failed
+INFO: [Common 17-206] Exiting Vivado at Thu Oct 10 12:07:14 2024...

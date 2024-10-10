@@ -24,7 +24,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 ISEStep( "vivado",
-         "-log i2c_write.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source i2c_write.tcl" );
+         "-log SPI_master_read_TSM.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_master_read_TSM.tcl" );
 
 
 

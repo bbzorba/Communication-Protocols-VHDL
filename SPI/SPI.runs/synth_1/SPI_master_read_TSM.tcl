@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.runs/synth_1/i2c_fsm.tcl"
+  variable script "E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.runs/synth_1/SPI_master_read_TSM.tcl"
   variable category "vivado_synth"
 }
 
@@ -55,20 +55,6 @@ if {$::dispatch::connected} {
   }
 }
 
-proc create_report { reportName command } {
-  set status "."
-  append status $reportName ".fail"
-  if { [file exists $status] } {
-    eval file delete [glob $status]
-  }
-  send_msg_id runtcl-4 info "Executing : $command"
-  set retval [eval catch { $command } msg]
-  if { $retval != 0 } {
-    set fp [open $status w]
-    close $fp
-    send_msg_id runtcl-5 warning "$msg"
-  }
-}
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
@@ -76,15 +62,15 @@ create_project -in_memory -part xc7a35tcpg236-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.cache/wt [current_project]
-set_property parent.project_path E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.xpr [current_project]
+set_property webtalk.parent_dir E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.cache/wt [current_project]
+set_property parent.project_path E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
-set_property ip_output_repo e:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.cache/ip [current_project]
+set_property ip_output_repo e:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib E:/dev/FPGA/Xlinx/communication_protocols_implementation/I2C/I2C_implementation/I2C_implementation.srcs/sources_1/new/i2c_fsm.vhd
+read_vhdl -library xil_defaultlib E:/dev/FPGA/Xlinx/communication_protocols_implementation/SPI/SPI.srcs/sources_1/new/SPI_master_TX_RX_TSM.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -98,7 +84,7 @@ set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }
-synth_design -top i2c_fsm -part xc7a35tcpg236-1
+synth_design -top SPI_master_read_TSM -part xc7a35tcpg236-1
 OPTRACE "synth_design" END { }
 if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
  send_msg_id runtcl-6 info "Synthesis results are not added to the cache due to CRITICAL_WARNING"
@@ -108,10 +94,10 @@ if { [get_msg_config -count -severity {CRITICAL WARNING}] > 0 } {
 OPTRACE "write_checkpoint" START { CHECKPOINT }
 # disable binary constraint mode for synth run checkpoints
 set_param constraints.enableBinaryConstraints false
-write_checkpoint -force -noxdef i2c_fsm.dcp
+write_checkpoint -force -noxdef SPI_master_read_TSM.dcp
 OPTRACE "write_checkpoint" END { }
 OPTRACE "synth reports" START { REPORT }
-create_report "synth_1_synth_report_utilization_0" "report_utilization -file i2c_fsm_utilization_synth.rpt -pb i2c_fsm_utilization_synth.pb"
+generate_parallel_reports -reports { "report_utilization -file SPI_master_read_TSM_utilization_synth.rpt -pb SPI_master_read_TSM_utilization_synth.pb"  } 
 OPTRACE "synth reports" END { }
 file delete __synthesis_is_running__
 close [open __synthesis_is_complete__ w]
